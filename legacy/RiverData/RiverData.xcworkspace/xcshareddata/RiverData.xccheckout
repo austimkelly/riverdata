@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B057B6E5-217A-4AAA-8F2C-058587D71621</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RiverData</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A61DAF910A1F2E68B4B97FB9BAA3F045C5388B4E</key>
+		<string>https://bitbucket.org/austimkelly/usgswaterdata.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>native/RiverData/RiverData.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A61DAF910A1F2E68B4B97FB9BAA3F045C5388B4E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/austimkelly/usgswaterdata.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A61DAF910A1F2E68B4B97FB9BAA3F045C5388B4E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A61DAF910A1F2E68B4B97FB9BAA3F045C5388B4E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>riverdata</string>
+		</dict>
+	</array>
+</dict>
+</plist>
