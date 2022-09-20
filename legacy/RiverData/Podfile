@@ -1,0 +1,25 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '7.0'
+
+target 'RiverData' do
+
+pod 'Google/Analytics', '~> 1.0.0'
+pod "AFNetworking", "~> 2.0"
+pod 'SVProgressHUD'
+
+end
+
+target 'RiverData - Lite' do
+
+pod 'Google/Analytics', '~> 1.0.0'
+pod "AFNetworking", "~> 2.0"
+pod 'SVProgressHUD'
+
+end
+
+target 'RiverDataTests' do
+
+pod "AFNetworking", "~> 2.0"
+
+end
+
