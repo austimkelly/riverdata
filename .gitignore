@@ -4,6 +4,10 @@
 *.ap_
 *.aab
 
+**/.DS_Store
+
+legacy/RiverData/RiverData/RiverData
+
 # Files for the ART/Dalvik VM
 *.dex
 
