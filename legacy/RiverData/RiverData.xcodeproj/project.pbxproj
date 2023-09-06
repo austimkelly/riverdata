@@ -1206,9 +1206,6 @@
 				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Tim Kelly";
 				TargetAttributes = {
-					0288006017F8836F00B61B0D = {
-						DevelopmentTeam = 748LP678E8;
-					};
 					0288008717F8836F00B61B0D = {
 						TestTargetID = 0288006017F8836F00B61B0D;
 					};
@@ -1864,6 +1861,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.4.0;
+				DEVELOPMENT_TEAM = 748LP678E8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1890,6 +1888,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.4.0;
+				DEVELOPMENT_TEAM = 748LP678E8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
