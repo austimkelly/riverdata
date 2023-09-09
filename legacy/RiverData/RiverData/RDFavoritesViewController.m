@@ -36,7 +36,7 @@
     
     self.favoritesTableView.allowsSelectionDuringEditing = YES;
     
-    self.splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
+    self.splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeOneBesideSecondary;
     
     self.splitViewController.delegate = self;
     

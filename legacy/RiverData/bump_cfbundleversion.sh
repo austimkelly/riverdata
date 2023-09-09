@@ -1,3 +1,9 @@
+#!/bin/bash
+
+# Make sure you have set the default XCode for the command line, e.g. sudo xcode-select -s 
+/Applications/Xcode.app/Contents/Developer
+# For RiverData the .plist arg will be ./RiverData/RiverData-Info.plist
+
 INFOPLIST_PATH=$1
 
 if [ ! -f $INFOLIST_PATH ]; then

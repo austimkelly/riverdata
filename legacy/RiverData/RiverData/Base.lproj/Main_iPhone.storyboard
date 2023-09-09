@@ -468,7 +468,6 @@
                     </tabBarItem>
                     <connections>
                         <segue destination="6WJ-Gw-pBe" kind="relationship" relationship="masterViewController" id="rsW-WL-3aF"/>
-                        <segue destination="Yde-uX-Rrb" kind="relationship" relationship="detailViewController" id="sVF-4h-0Zv"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e10-vs-qsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -732,8 +731,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c11-oB-zTL"/>
-        <segue reference="FYp-SO-uRY"/>
+        <segue reference="6En-sF-GPy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.60761076211929321" green="0.083778522908687592" blue="0.10287398099899292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>

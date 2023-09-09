@@ -1870,7 +1870,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RiverData/RiverData-Prefix.pch";
 				INFOPLIST_FILE = "RiverData/RiverData-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fizzyartwerks.riverdata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1897,7 +1897,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RiverData/RiverData-Prefix.pch";
 				INFOPLIST_FILE = "RiverData/RiverData-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fizzyartwerks.riverdata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1969,7 +1969,7 @@
 					"DEBUG=1",
 				);
 				INFOPLIST_FILE = "RiverData/RiverData Lite-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IS_LITE = 1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fizzyartwerks.riverdata.lite;
@@ -1997,7 +1997,7 @@
 				GCC_PREFIX_HEADER = "RiverData/RiverData-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "IS_LITE=1";
 				INFOPLIST_FILE = "RiverData/RiverData Lite-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IS_LITE = 1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fizzyartwerks.riverdata.lite;

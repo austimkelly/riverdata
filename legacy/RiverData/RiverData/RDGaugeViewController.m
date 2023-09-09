@@ -90,6 +90,7 @@
     if (self.splitViewController){
         self.navigationItem.leftBarButtonItem = [self.splitViewController displayModeButtonItem];
         self.navigationItem.leftItemsSupplementBackButton = YES;
+        //self.splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeSecondaryOnly;
     }
     
 }
