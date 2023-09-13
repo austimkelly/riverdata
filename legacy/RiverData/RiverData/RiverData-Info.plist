@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.4.0.7</string>
+	<string>2.4.0.8</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>citymapper</string>
@@ -41,6 +41,8 @@
 	</dict>
 	<key>UIFileSharingEnabled</key>
 	<false/>
+	<key>UILaunchStoryboardName</key>
+	<string>Main_iPhone.storyboard</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main_iPhone</string>
 	<key>UIMainStoryboardFile~ipad</key>

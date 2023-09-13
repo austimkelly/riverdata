@@ -36,7 +36,7 @@
     
     self.favoritesTableView.allowsSelectionDuringEditing = YES;
     
-    self.splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeOneBesideSecondary;
+    self.splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAutomatic;
     
     self.splitViewController.delegate = self;
     
@@ -73,7 +73,6 @@
     
     [self.splitViewController displayModeButtonItem];
 
-    
 }
 
 - (void)initFavorites{
@@ -310,5 +309,6 @@ collapseSecondaryViewController:(UIViewController *)secondaryViewController
         
     }
 }
+
 
 @end

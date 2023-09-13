@@ -224,7 +224,7 @@
                                         <rect key="frame" x="0.0" y="94" width="600" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d04-TK-MdB" id="QvX-RN-hBr">
-                                            <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="88"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="581.66666666666663" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLK-t1-t8g" userLabel="Gauge Name">
@@ -446,6 +446,7 @@
             <objects>
                 <navigationController title="Favorites" id="6WJ-Gw-pBe" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZR3-0a-fe3">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -459,7 +460,7 @@
         <!--Split View Controller-->
         <scene sceneID="hjn-Dz-472">
             <objects>
-                <splitViewController id="mom-gm-pKS" sceneMemberID="viewController">
+                <splitViewController modalPresentationStyle="fullScreen" id="mom-gm-pKS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="LJc-Mu-9Hd">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -474,8 +475,9 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
-                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
+                <tabBarController autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="overFullScreen" id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -494,7 +496,7 @@
         <!--River Data-->
         <scene sceneID="jYU-vq-YVZ">
             <objects>
-                <navigationController storyboardIdentifier="mainNaviController" automaticallyAdjustsScrollViewInsets="NO" id="Dlw-e6-yjk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainNaviController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Dlw-e6-yjk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="River Data" image="16-line-chart.png" id="u1e-5L-l1D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ors-lO-66w">
@@ -513,7 +515,7 @@
         <!--Info-->
         <scene sceneID="B0B-es-pdY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9pL-2P-loj" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9pL-2P-loj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info" image="question-mark.png" id="t8c-hb-hmF"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="OHc-PH-Xge"/>
@@ -528,7 +530,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DX6-5b-ue3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1401" y="1469"/>
+            <point key="canvasLocation" x="-1799" y="1487"/>
         </scene>
         <!--River Data Info-->
         <scene sceneID="KFD-ke-MWS">
