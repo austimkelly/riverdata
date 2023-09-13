@@ -47,7 +47,7 @@
 	// Do any additional setup after loading the view.
     
     self.contentView.translatesAutoresizingMaskIntoConstraints = YES;
-    //self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     
     NSString *measurementTypeDisplayName = self.timeSeriesItem.name;
     
@@ -73,6 +73,10 @@
     twoFingerTapRecognizer.numberOfTapsRequired = 1;
     twoFingerTapRecognizer.numberOfTouchesRequired = 2;
     [self.chartScrollView addGestureRecognizer:twoFingerTapRecognizer];
+    
+//    CGRect newFrame = self.chartImageView.frame;
+//    newFrame.origin.y = self.chartDaySlider.frame.size.height + self.chartDaySlider.frame.origin.y + 100;
+//    self.chartImageView.frame = newFrame;
 
     
     [self fetchChartImage];
@@ -229,12 +233,12 @@
 #pragma mark -
 #pragma mark - Rotation
 
--(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    // When the orientation is changed the contentSize is reset when the frame changes. Setting this back to the relevant image size
-    self.chartScrollView.contentSize = self.chartImageView.image.size;
-    
-    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-}
+//-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+//    // When the orientation is changed the contentSize is reset when the frame changes. Setting this back to the relevant image size
+//    self.chartScrollView.contentSize = self.chartImageView.image.size;
+//
+//    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+//}
 
 
 
