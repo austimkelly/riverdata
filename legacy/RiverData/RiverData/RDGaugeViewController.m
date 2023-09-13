@@ -273,10 +273,18 @@
             [SVProgressHUD dismiss];
             
         } else {
-            [UIAlertView showErrorWithMessage:@"Server did not return latest gauges. Data may not be up to date." handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
-                // done
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Server did not return latest gauges. Data may not be up to date." preferredStyle:UIAlertControllerStyleAlert];
+
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                // Handle the OK button tap
                 [SVProgressHUD dismiss];
             }];
+
+            [alertController addAction:okAction];
+
+            // Present the alertController
+            [self presentViewController:alertController animated:YES completion:nil];
+
         }
         
         
@@ -595,7 +603,13 @@
         
        
         timeStampLabel.text = [NSString stringWithFormat:@"Last Update: %@", dateString];
-        
+        NSInteger daysOld = daysOldFromDate(dateString);
+        if (daysOld > 118) {
+            timeStampLabel.textColor = UIColor.redColor;
+        } else if (daysOld > 7) {
+            timeStampLabel.textColor = UIColor.orangeColor;
+        }
+            
     } else if (indexPath.section == 1){
         
         // email alerts
@@ -632,7 +646,31 @@
 };
 
 
+// This code calculates the number of days old the dateString is and returns that value as an NSInteger. If the input date is not valid, it returns -1, but you can choose any other suitable value to indicate invalid input.
+NSInteger daysOldFromDate(NSString *dateString) {
+    // Create a date formatter to parse the input date string
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM/dd/yy, hh:mm:ss a zzz"];
 
+    // Parse the input date string into an NSDate object
+    NSDate *inputDate = [dateFormatter dateFromString:dateString];
+
+    if (inputDate) {
+        // Calculate the current date
+        NSDate *currentDate = [NSDate date];
+
+        // Calculate the time interval (in seconds) between the input date and the current date
+        NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:inputDate];
+
+        // Calculate the number of days from the time interval
+        NSInteger numberOfDays = (NSInteger)(timeInterval / (24 * 60 * 60)); // 24 hours * 60 minutes * 60 seconds
+
+        return numberOfDays;
+    }
+
+    // Input date is not valid
+    return -1; // You can choose to return a specific value to indicate invalid input
+}
 
 
 #pragma mark UIActionSheetDelegate
