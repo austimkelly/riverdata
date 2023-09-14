@@ -403,11 +403,11 @@
         
         GA_TRACK_EVENT(@"Tapped USGS Email Notifications", self.siteCode, self.title, nil);
         
-        [UIAlertView showConfirmationDialogWithTitle:@"Leaving River Data" message:@"You will be re-directed to the USGS Water Alert web page. All email subscription activitations and de-activations are handled through UGSG." handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+        [UIAlertView showConfirmationDialogWithTitle:@"Leaving River Data" message:@"You will be re-directed to the USGS Water Alert web page. All email subscription activitations and de-activations are handled through UGSG and not this the River Data application." handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
             
             // completion
             if (buttonIndex == 1){
-                NSString *url = [NSString stringWithFormat:@"http://water.usgs.gov/wateralert/subscribe2/index.html?site_no=%@&type_cd=sw", self.siteCode];
+                NSString *url = [NSString stringWithFormat:@"https://accounts.waterdata.usgs.gov/wateralert/my-alerts/#siteNumber=%@", self.siteCode];
                 
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
             }
