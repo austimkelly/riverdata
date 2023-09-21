@@ -137,7 +137,7 @@
     
     // Add custom label
     UILabel *customNaviTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 480, 55)];
-    customNaviTitle.backgroundColor = [UIColor clearColor];
+    customNaviTitle.backgroundColor = [UIColor systemBackgroundColor];
     customNaviTitle.numberOfLines = 2;
     customNaviTitle.textAlignment = NSTextAlignmentCenter;
     customNaviTitle.font = [UIFont boldSystemFontOfSize:14];
@@ -474,7 +474,7 @@
     if([view isKindOfClass:[UITableViewHeaderFooterView class]]){
         
         UITableViewHeaderFooterView *tableViewHeaderFooterView = (UITableViewHeaderFooterView *) view;
-        tableViewHeaderFooterView.textLabel.textColor = [UIColor whiteColor];
+        tableViewHeaderFooterView.textLabel.textColor = [UIColor labelColor];
         tableViewHeaderFooterView.textLabel.numberOfLines = 2;
         tableViewHeaderFooterView.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
         tableViewHeaderFooterView.contentView.backgroundColor = [UIColor riverDataMaroon];

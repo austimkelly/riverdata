@@ -43,6 +43,8 @@
    
     [self initStateModels];
     
+    self.statesTableView.backgroundColor = [UIColor systemBackgroundColor];
+    
     self.searchBar.delegate = self;
     
     self.navigationItem.title = @"State Gauges";

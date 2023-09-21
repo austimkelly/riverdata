@@ -31,6 +31,9 @@
     [self.startAppOnFavorites setOn:[RDUserDefaults getStartAppOnFavorites]];
     
     self.versionLabel.text = [NSString stringWithFormat:@"Version %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
+    
+    self.tableView.backgroundColor = [UIColor systemBackgroundColor];
+
 }
 
 - (void)didReceiveMemoryWarning {
