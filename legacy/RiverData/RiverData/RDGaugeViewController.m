@@ -474,7 +474,7 @@
     if([view isKindOfClass:[UITableViewHeaderFooterView class]]){
         
         UITableViewHeaderFooterView *tableViewHeaderFooterView = (UITableViewHeaderFooterView *) view;
-        tableViewHeaderFooterView.textLabel.textColor = [UIColor labelColor];
+        tableViewHeaderFooterView.textLabel.textColor = [UIColor whiteColor];
         tableViewHeaderFooterView.textLabel.numberOfLines = 2;
         tableViewHeaderFooterView.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
         tableViewHeaderFooterView.contentView.backgroundColor = [UIColor riverDataMaroon];

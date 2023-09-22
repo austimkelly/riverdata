@@ -42,7 +42,6 @@
     
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    
     self.favoritesTableView.backgroundColor = [UIColor systemBackgroundColor];
     
     [self refreshUI];
@@ -164,7 +163,7 @@
     if([view isKindOfClass:[UITableViewHeaderFooterView class]]){
         
         UITableViewHeaderFooterView *tableViewHeaderFooterView = (UITableViewHeaderFooterView *) view;
-        tableViewHeaderFooterView.textLabel.textColor = [UIColor labelColor];
+        tableViewHeaderFooterView.textLabel.textColor = [UIColor whiteColor];
         tableViewHeaderFooterView.contentView.backgroundColor = [UIColor riverDataMaroon];
         
     }
